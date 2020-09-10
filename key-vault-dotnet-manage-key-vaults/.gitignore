@@ -23,7 +23,7 @@ tools/7-zip/
 
 [Tt]est[Rr]esult
 [Bb]uild[Ll]og.*
-
+*.azureauth
 *_i.c
 *_p.c
 *.ilk
