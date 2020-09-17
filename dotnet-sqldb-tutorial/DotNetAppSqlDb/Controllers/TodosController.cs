@@ -14,6 +14,7 @@ namespace DotNetAppSqlDb.Controllers
     {
         private MyDatabaseContext db = new MyDatabaseContext();
 
+
         // GET: Todos
         public ActionResult Index()
         {            
