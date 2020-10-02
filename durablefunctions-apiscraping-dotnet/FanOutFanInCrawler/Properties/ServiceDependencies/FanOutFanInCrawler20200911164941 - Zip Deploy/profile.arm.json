@@ -21,7 +21,7 @@
     },
     "resourceName": {
       "type": "string",
-      "defaultValue": "FanOutFanInCrawler20200911155729",
+      "defaultValue": "FanOutFanInCrawler20200911164941",
       "metadata": {
         "description": "Name of the main resource to be created by this template."
       }
