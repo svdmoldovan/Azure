@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "wyHkopvbbUY0xCThvEQp7BIpv5kR6lBpEknBMv7ipSag93ydSz0ucL7hPe8DTBElpvt8hinoy3JGFVI4aHOFcQ==",
+  "success": true,
+  "projectFilePath": "D:\\Apps\\Azure\\authentication-authorization-aspnet-core\\04\\demos\\m4demos\\ExternalApiClient\\ExternalApiClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\daniel.moldovan\\.nuget\\packages\\identitymodel\\4.1.1\\identitymodel.4.1.1.nupkg.sha512",
+    "C:\\Users\\daniel.moldovan\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\daniel.moldovan\\.nuget\\packages\\system.text.encodings.web\\4.6.0\\system.text.encodings.web.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

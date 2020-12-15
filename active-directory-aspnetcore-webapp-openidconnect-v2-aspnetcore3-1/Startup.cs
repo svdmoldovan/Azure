@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Authentication;
 //using Microsoft.AspNetCore.Authentication.AzureAD.UI;
 using Microsoft.AspNetCore.Authentication.OAuth.Claims;
@@ -11,6 +12,7 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Security.Claims;
+using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Identity.Web;
 using Microsoft.Identity.Web.UI;
@@ -38,9 +40,34 @@ namespace WebApp_OpenIDConnect_DotNet
                 options.HandleSameSiteCookieCompatibility();
             });
 
+            var azureAd = Configuration.GetSection("AzureAd");
             services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
-                .AddMicrosoftIdentityWebApp(Configuration.GetSection("AzureAd"));
-            
+	            .AddMicrosoftIdentityWebApp(o =>
+	            {
+		            o.Instance = azureAd.GetValue<string>("Instance");
+		            o.Domain = azureAd.GetValue<string>("Domain");
+		            o.ClientId = azureAd.GetValue<string>("ClientId");
+		            o.TenantId = azureAd.GetValue<string>("TenantId");
+		            o.CallbackPath = azureAd.GetValue<string>("CallbackPath");
+		            o.SaveTokens = true;
+
+		            o.Events = new OpenIdConnectEvents
+		            {
+			            OnRemoteFailure = context =>
+			            {
+				            context.HandleResponse();
+				            context.Response.Redirect("Home/Error?statusCode=403");
+				            return Task.FromResult(0);
+			            },
+			            OnTokenValidated = context =>
+			            {
+				            var jwt = context.SecurityToken;
+				            return Task.FromResult(jwt);
+                        }
+                    };
+	            },
+	            o => { o.ExpireTimeSpan = TimeSpan.FromMinutes(100); });
+
             //services.Configure(AzureADDefaults.OpenIdScheme, options =>
             //{
             //    options.Authority = options.Authority + "/v2.0/";         // Microsoft identity platform

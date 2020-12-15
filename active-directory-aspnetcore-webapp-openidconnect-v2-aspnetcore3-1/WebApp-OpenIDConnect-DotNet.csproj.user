@@ -6,5 +6,6 @@
   <PropertyGroup>
     <ActiveDebugProfile>webApp</ActiveDebugProfile>
     <ShowAllFiles>true</ShowAllFiles>
+    <NameOfLastUsedPublishProfile>OpenIdConnect - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

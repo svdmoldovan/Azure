@@ -1,0 +1,9 @@
+D:\Apps\Azure\authentication-authorization-aspnet-core\04\demos\m4demos\ConfArch\ConfArch.Data\bin\Debug\netstandard2.0\ConfArch.Data.deps.json
+D:\Apps\Azure\authentication-authorization-aspnet-core\04\demos\m4demos\ConfArch\ConfArch.Data\bin\Debug\netstandard2.0\ConfArch.Data.dll
+D:\Apps\Azure\authentication-authorization-aspnet-core\04\demos\m4demos\ConfArch\ConfArch.Data\bin\Debug\netstandard2.0\ConfArch.Data.pdb
+D:\Apps\Azure\authentication-authorization-aspnet-core\04\demos\m4demos\ConfArch\ConfArch.Data\obj\Debug\netstandard2.0\ConfArch.Data.csprojAssemblyReference.cache
+D:\Apps\Azure\authentication-authorization-aspnet-core\04\demos\m4demos\ConfArch\ConfArch.Data\obj\Debug\netstandard2.0\ConfArch.Data.AssemblyInfoInputs.cache
+D:\Apps\Azure\authentication-authorization-aspnet-core\04\demos\m4demos\ConfArch\ConfArch.Data\obj\Debug\netstandard2.0\ConfArch.Data.AssemblyInfo.cs
+D:\Apps\Azure\authentication-authorization-aspnet-core\04\demos\m4demos\ConfArch\ConfArch.Data\obj\Debug\netstandard2.0\ConfArch.Data.csproj.CoreCompileInputs.cache
+D:\Apps\Azure\authentication-authorization-aspnet-core\04\demos\m4demos\ConfArch\ConfArch.Data\obj\Debug\netstandard2.0\ConfArch.Data.dll
+D:\Apps\Azure\authentication-authorization-aspnet-core\04\demos\m4demos\ConfArch\ConfArch.Data\obj\Debug\netstandard2.0\ConfArch.Data.pdb
